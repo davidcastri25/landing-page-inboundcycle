@@ -1,6 +1,9 @@
 /* Variables */
 :root {  
   --margin-container-lg: 0px 150px;
+  --margin-container-md: 0px 75px;
+  --margin-container-sm: 0px 30px;
+  --margin-container-xs: 0px 0px;
   --padding-container: 40px;
   --inbound-orange: rgb(233, 108, 25);
   --inbound-hover: rgb(250, 175, 125);
@@ -64,8 +67,13 @@ header {
 /******* RESPONSIVE MEDIA QUERIES  *******/
 /* Mid-length */
 @media all and (max-width: 992px) {
+    /* Header */
     header {
         border-top: 5px solid black;
+    }
+
+    .header-container {
+        margin: var(--margin-container-md);        
     }
 }
 
@@ -73,18 +81,50 @@ header {
 
 /* Small-length */
 @media all and (max-width: 768px) {
-
+    /* Header */
     header {
         border-top: 5px solid var(--inbound-orange);
     }
 
+    .header-container {
+        margin: var(--margin-container-sm);        
+    }
+
+    /* Logotipo */
+    .logotype {
+        width: 50%;
+        height: auto;
+    }
 }
 
 
 
 /* XS-length */
 @media all and (max-width: 576px) {
+    /* Header */
     header {
         border-top: 5px solid black;
+    }
+
+    .header-container {
+        margin: var(--margin-container-xs);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;        
+    }
+
+    /* Logotipo */
+    .logotype {
+        width: 50%;
+        min-width: 200px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    /* Social Icons */
+    .social-icons {
+        align-self:center;    
+        width: 200px;   
     }
 }
