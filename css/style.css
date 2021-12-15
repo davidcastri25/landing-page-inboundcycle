@@ -1,0 +1,90 @@
+/* Variables */
+:root {  
+  --margin-container-lg: 0px 150px;
+  --padding-container: 40px;
+  --inbound-orange: rgb(233, 108, 25);
+  --inbound-hover: rgb(250, 175, 125);
+}
+
+*{
+    /* margin: 10px; */
+    /* padding: 10px; */
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+/******* HEADER *******/
+header {
+    border-top: 5px solid var(--inbound-orange);
+    margin-bottom: 15px;
+}
+
+.header-container {
+    margin: var(--margin-container-lg);
+    padding: var(--padding-container);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logotipo */
+/* .logotype {
+    border-style: solid;
+} */
+
+/* Social icons */
+.social-icons {
+    padding: 0px;
+    width: 60px;
+    align-self: flex-start;    
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;    
+}
+
+.social-icons li {
+    list-style-type: none;    
+}
+
+.social-icons li a i {
+    color: var(--inbound-orange);    
+}
+
+.social-icons li a i:hover {
+    color: var(--inbound-hover);    
+}
+
+
+
+/******* RESPONSIVE MEDIA QUERIES  *******/
+/* Mid-length */
+@media all and (max-width: 992px) {
+    header {
+        border-top: 5px solid black;
+    }
+}
+
+
+
+/* Small-length */
+@media all and (max-width: 768px) {
+
+    header {
+        border-top: 5px solid var(--inbound-orange);
+    }
+
+}
+
+
+
+/* XS-length */
+@media all and (max-width: 576px) {
+    header {
+        border-top: 5px solid black;
+    }
+}
