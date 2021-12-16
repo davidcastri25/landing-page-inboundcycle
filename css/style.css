@@ -8,9 +8,10 @@
   --padding-container-xs: 25px;
   --inbound-orange: rgb(233, 108, 25);
   --inbound-hover: rgb(248, 164, 108);
-  --inbound-grey: rgb(131, 131, 131);
+  --inbound-grey: rgb(167, 167, 167);
   --footer-black: rgb(73, 73, 73);
-  --footer-white: rgb(231, 231, 231);
+  --footer-white: rgb(235, 233, 233);
+  --separator-white: rgba(255, 254, 254, 0.137);
 }
 
 *{
@@ -95,6 +96,7 @@ header {
 section {    
     /* background: #4E4E6A; */
     flex: 1 1 auto;
+    position: relative;
 }
 
 aside {
@@ -104,6 +106,62 @@ aside {
 
 
 /******* SECTION *******/
+/* Imagen */
+.ebook {
+    position: absolute;
+    z-index: 100;
+    bottom: 45%;
+    left: 55%;
+    max-width: 60%;
+    height: auto;
+}
+
+/* Título */
+h1 {
+    width: 50%;
+    margin-bottom: 45px;
+    font-size: 28px;
+    color: var(--inbound-orange);
+}
+
+/* Subtítulo */
+h2 {
+    width: 50%;
+    margin-bottom: 40px;
+    font-size: 20px;
+    color: var(--inbound-grey);
+}
+
+/* Separador */
+hr {
+    color: var(--separator-white);
+    margin-bottom: 30px;
+}
+
+/* Texto */
+.text {
+    color: var(--footer-black);
+    font-size: 14px;
+    line-height: 25px;
+}
+
+#demo-link {
+    color: var(--inbound-orange);
+    font-weight: bold;
+}
+
+#demo-link:hover {
+    color: var(--inbound-hover);
+}
+
+.emphasizes {
+    width: 100%;
+    margin-top: 70px;
+    text-align: center;
+    color: var(--inbound-orange);
+    font-weight: bold;
+    text-transform: uppercase;
+}
 
 
 /******* FORM *******/
