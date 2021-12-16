@@ -1,5 +1,5 @@
 /* Variables */
-:root {  
+:root {
   --margin-container-lg: 0px 150px;
   --margin-container-md: 0px 75px;
   --margin-container-sm: 0px 30px;
@@ -8,17 +8,24 @@
   --padding-container-xs: 25px;
   --inbound-orange: rgb(233, 108, 25);
   --inbound-hover: rgb(250, 175, 125);
+  --inbound-grey: rgb(131, 131, 131);
+  --footer-black: rgb(73, 73, 73);
+  --footer-white: rgb(231, 231, 231);
 }
 
 *{
     /* margin: 10px; */
     /* padding: 10px; */
-    box-sizing: border-box;
+    box-sizing: border-box;    
 }
 
 html, body {
     margin: 0;
     height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
 /******* HEADER *******/
@@ -43,39 +50,116 @@ header {
 .social-icons {
     padding: 0px;
     width: 60px;
-    align-self: flex-start;    
+    align-self: flex-start;
     margin: 0px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;    
+    align-items: flex-start;
 }
 
 .social-icons li {
-    list-style-type: none;    
+    list-style-type: none;
 }
 
 .social-icons li a i {
-    color: var(--inbound-orange);    
+    color: var(--inbound-orange);
 }
 
 .social-icons li a i:hover {
-    color: var(--inbound-hover);    
+    color: var(--inbound-hover);
 }
 
 
 /******* SEPARATOR IMAGE *******/
 .separator-image-container {
-    width: 100vw;
+    width: 100%;
     height: auto;
-    margin-bottom: 40px; 
-} 
+    margin-bottom: 40px;
+}
 
-.separator-image {    
+.separator-image {
     width: 100%;
     max-height: 130px;
     object-fit: cover;
     /* overflow: hidden; */
 }
+
+
+/******* FOOTER *******/
+footer {
+    background-color: var(--footer-black);
+    margin-top: 50px;
+}
+
+.footer-frame {
+    margin: var(--margin-container-lg);
+    padding: var(--padding-container);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Legal */
+.legal-container {
+    width: 500px;
+    padding: 0px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.footer-text {
+    color: var(--footer-white);
+    font-size: 14px;
+}
+
+/* InboundCycle © 2015 */
+#lg-first-element {
+    order: 1;
+}
+
+/* Nav */
+#lg-second-element {
+    order: 2;
+}
+
+/* Elemento que queda en medio de los tres textos del footer */
+#mid-element {
+    border-left: 2px solid var(--inbound-grey);
+    border-right: 2px solid var(--inbound-grey);
+    text-align: center;
+    /* margin-left: 5px; */
+    width: 155px;
+}
+
+/* Aviso Legal */
+#second-nav-element {
+    width: 80px;
+}
+
+.legal-links {
+    width: 245px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0px;
+}
+
+.legal-links li {
+    list-style-type: none;
+    text-align: end;
+}
+
+.legal-links li a {
+    text-decoration: none;
+    width: 100%;
+}
+
+.legal-links li a:hover {
+    color: var(--inbound-hover);
+}
+
+
 
 
 /******* RESPONSIVE MEDIA QUERIES  *******/
@@ -87,7 +171,13 @@ header {
     }
 
     .header-container {
-        margin: var(--margin-container-md);        
+        margin: var(--margin-container-md);
+    }
+
+
+    /******* FOOTER *******/
+    .footer-frame {
+        margin: var(--margin-container-md);
     }
 }
 
@@ -101,13 +191,28 @@ header {
     }
 
     .header-container {
-        margin: var(--margin-container-sm);        
+        margin: var(--margin-container-sm);
     }
 
     /* Logotipo */
     .logotype {
         width: 50%;
         height: auto;
+    }
+
+
+    /******* FOOTER *******/
+    .footer-frame {
+        margin: var(--margin-container-sm);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .legal-container {
+        margin-top: 20px;
+        justify-content: center;    
     }
 }
 
@@ -126,7 +231,7 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: center;        
+        align-items: center;
     }
 
     /* Logotipo */
@@ -139,7 +244,32 @@ header {
 
     /* Social Icons */
     .social-icons {
-        align-self:center;    
-        width: 200px;   
+        align-self:center;
+        width: 200px;
+    }
+
+
+    /******* FOOTER *******/
+    .footer-frame {
+        margin: var(--margin-container-xs);
+    }
+
+    .legal-container {    
+        flex-direction: column;
+    }
+
+    /* InboundCycle © 2015 */
+    #lg-first-element {
+        order: 2;
+    }
+
+    /* Nav */
+    #lg-second-element {
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    #mid-element {
+        border-left: 0px;
     }
 }

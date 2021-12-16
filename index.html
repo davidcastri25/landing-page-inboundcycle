@@ -6,6 +6,10 @@
   <title>InboundCycle</title>
   <!-- FontAwesome -->
   <link rel="stylesheet" href="css/font-awesome.min.css">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
   <!-- Styles -->
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -84,26 +88,36 @@
 
   <!-- Footer -->
   <footer>
+
     <div class="footer-frame">
+
       <!-- Logotype -->
       <img src="img/inboundcycle-logo-small.png" class="logotype" alt="InboundCycle">
-      <!-- Legal menu -->
-      <nav>
-        <ul>
-          <li><a href="#" title="Lea nuestra política de privacidad">Política de Privacidad</a></li>
-          <li><a href="#" title="Lea el aviso legal">Aviso Legal</a></li>
-        </ul>
-      </nav>
-      <!-- Copyright -->
-      <small>InboundCycle © 2015</small>
+
+      <div class="legal-container">
+        <!-- Legal menu -->
+        <nav id="lg-second-element">
+          <ul class="legal-links">
+            <li id="mid-element"><a href="#" title="Lea nuestra política de privacidad" class="footer-text">Política de Privacidad</a></li>
+            <li id="second-nav-element"><a href="#" title="Lea el aviso legal" class="footer-text">Aviso Legal</a></li>
+          </ul>
+        </nav>
+
+        <!-- Copyright -->
+        <small class="footer-text" id="lg-first-element">InboundCycle © 2015</small>
+      </div>
+
+      
+
     </div>
   </footer>
 
+
   <!-- Pop-up -->
-  <div class="popup">
+  <!--<div class="popup">
     <div class="caption">
       <i class="fa fa-times"></i>
       <p>¡Muchas gracias!</p>
     </div>
-  </div>
+  </div>  -->
 </body>
