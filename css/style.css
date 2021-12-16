@@ -7,7 +7,7 @@
   --padding-container: 40px;
   --padding-container-xs: 25px;
   --inbound-orange: rgb(233, 108, 25);
-  --inbound-hover: rgb(250, 175, 125);
+  --inbound-hover: rgb(248, 164, 108);
   --inbound-grey: rgb(131, 131, 131);
   --footer-black: rgb(73, 73, 73);
   --footer-white: rgb(231, 231, 231);
@@ -74,7 +74,7 @@ header {
 .separator-image-container {
     width: 100%;
     height: auto;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
 }
 
 .separator-image {
@@ -85,10 +85,112 @@ header {
 }
 
 
+/******* MAIN SECTION LAYOUT *******/
+.wrapper {
+    margin: var(--margin-container-lg);
+    padding: var(--padding-container);
+    display: flex;
+}
+
+section {    
+    /* background: #4E4E6A; */
+    flex: 1 1 auto;
+}
+
+aside {
+    /* background: #F73f52; */
+    flex: 1 1 auto;
+}
+
+
+/******* SECTION *******/
+
+
+/******* FORM *******/
+form {
+    width: 350px;
+    background-color: var(--footer-white);
+    padding: 5px 30px 25px 30px;
+    margin-left: 30px;
+}
+
+/* Form title */
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--inbound-orange);
+}
+
+
+/* Input containers */
+fieldset {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+
+/* First section of inputs */
+input[type=text], [type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+}
+
+input[type=email] {
+    margin-bottom: 25px;
+}
+
+/* Second section of inputs */
+.label-checkbox {
+    display: block;
+    color: var(--footer-black);
+}
+
+/* Link del primer checkbox */
+#link-priv {
+    text-decoration: none;
+    color: var(--inbound-orange);
+}
+
+#link-priv:hover {
+    color: var(--inbound-hover);
+}
+
+.label-checkbox:first-child {
+    margin-bottom: 7px;
+}
+
+.label-checkbox:last-child {
+    margin-bottom: 7px;
+}
+
+/* Button submit */
+button {
+    width: 100%;
+    background-color: var(--inbound-orange);
+    color: var(--footer-white);
+    padding: 14px 20px;
+    margin: 25px 0px 8px 0px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+button:hover {
+    background-color: var(--inbound-hover);
+}
+
+
 /******* FOOTER *******/
 footer {
     background-color: var(--footer-black);
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .footer-frame {
@@ -175,6 +277,13 @@ footer {
     }
 
 
+    /******* MAIN SECTION LAYOUT *******/
+    .wrapper {
+        margin: var(--margin-container-md);
+    }
+
+
+
     /******* FOOTER *******/
     .footer-frame {
         margin: var(--margin-container-md);
@@ -198,6 +307,12 @@ footer {
     .logotype {
         width: 50%;
         height: auto;
+    }
+
+
+    /******* MAIN SECTION LAYOUT *******/
+    .wrapper {
+        margin: var(--margin-container-sm);
     }
 
 
@@ -246,6 +361,12 @@ footer {
     .social-icons {
         align-self:center;
         width: 200px;
+    }
+
+
+    /******* MAIN SECTION LAYOUT *******/
+    .wrapper {
+        margin: var(--margin-container-xs);
     }
 
 
