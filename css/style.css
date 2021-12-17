@@ -331,8 +331,8 @@ footer {
     right:0px;
     bottom:0px;
     left:0px;
-    background-color: rgba(0, 0, 0, 0.226);
-    /* display: none; */
+    background-color: rgba(0, 0, 0, 0.486);
+    display: none;
 }
 
 /* Pop-up */
@@ -350,6 +350,7 @@ footer {
 
 .caption i {
     float: right;
+    cursor: pointer;
 }
 
 .caption i:hover {
