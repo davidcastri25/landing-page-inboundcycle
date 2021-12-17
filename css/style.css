@@ -623,7 +623,8 @@ footer {
 
     .legal-container {
         margin-top: 20px;
-        justify-content: center;    
+        justify-content: center; 
+        width: 100%;   
     }
 
 
