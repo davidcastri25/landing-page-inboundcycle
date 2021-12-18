@@ -33,36 +33,36 @@ header {
     border-top: 5px solid var(--inbound-orange);
 }
 
-.header-container {
-    margin: var(--margin-container-lg);         /* Box */
-    padding: var(--padding-container);
-    display: flex;                              /* Flex */
-    justify-content: space-between;
-    align-items: center;
-}
+    .header-container {
+        margin: var(--margin-container-lg);         /* Box */
+        padding: var(--padding-container);
+        display: flex;                              /* Flex */
+        justify-content: space-between;
+        align-items: center;
+    }
 
-/* Social icons */
-.social-icons {
-    padding: 0px;                           /* Box */
-    width: 60px;
-    margin: 0px;
-    align-self: flex-start;                 /* Flex */    
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
+        /* Social icons */
+        .social-icons {
+            padding: 0px;                           /* Box */
+            width: 60px;
+            margin: 0px;
+            align-self: flex-start;                 /* Flex */    
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
 
-.social-icons li {
-    list-style-type: none;
-}
+            .social-icons li {
+                list-style-type: none;
+            }
 
-.social-icons li a i {
-    color: var(--inbound-orange);
-}
+                .social-icons li a i {
+                    color: var(--inbound-orange);
+                }
 
-.social-icons li a i:hover {
-    color: var(--inbound-hover);
-}
+                .social-icons li a i:hover {
+                    color: var(--inbound-hover);
+                }
 
 
 /******* SEPARATOR IMAGE *******/
@@ -71,11 +71,11 @@ header {
     height: auto;
 }
 
-.separator-image {
-    width: 100%;
-    max-height: 130px;
-    object-fit: cover;
-}
+    .separator-image {
+        width: 100%;
+        max-height: 130px;
+        object-fit: cover;
+    }
 
 
 /******* MAIN SECTION LAYOUT *******/
@@ -85,14 +85,14 @@ header {
     display: flex;
 }
 
-section {
-    flex: 1 1 auto;
-    position: relative;
-}
+    section {
+        flex: 1 1 auto;
+        position: relative;
+    }
 
-aside {
-    flex: 1 1 auto;
-}
+    aside {
+        flex: 1 1 auto;
+    }
 
 
 /******* SECTION *******/
@@ -135,14 +135,14 @@ hr {
     line-height: 25px;
 }
 
-#demo-link {
-    color: var(--inbound-orange);
-    font-weight: bold;
-}
+    #demo-link {
+        color: var(--inbound-orange);
+        font-weight: bold;
+    }
 
-#demo-link:hover {
-    color: var(--inbound-hover);
-}
+    #demo-link:hover {
+        color: var(--inbound-hover);
+    }
 
 .emphasizes {
     width: 100%;                    /* Box */
@@ -178,42 +178,43 @@ fieldset {
 }
 
 
-/* First section of inputs */
-input[type=text], [type=email] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-}
+    /* First section of inputs */
+    input[type=text], [type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    }
 
-input[type=email] {
-    margin-bottom: 25px;
-}
+    input[type=email] {
+        margin-bottom: 25px;
+    }
 
-/* Second section of inputs */
-.label-checkbox {
-    display: block;
-    color: var(--footer-black);
-}
+    /* Second section of inputs */
+    .label-checkbox {
+        display: block;
+        color: var(--footer-black);
+    }
 
-/* Link del primer checkbox */
-#link-priv {
-    text-decoration: none;
-    color: var(--inbound-orange);
-}
+    .label-checkbox:first-child {
+        margin-bottom: 7px;
+    }
 
-#link-priv:hover {
-    color: var(--inbound-hover);
-}
+    .label-checkbox:last-child {
+        margin-bottom: 7px;
+    }
 
-.label-checkbox:first-child {
-    margin-bottom: 7px;
-}
+        /* Link del primer checkbox */
+        #link-priv {
+            text-decoration: none;
+            color: var(--inbound-orange);
+        }
 
-.label-checkbox:last-child {
-    margin-bottom: 7px;
-}
+        #link-priv:hover {
+            color: var(--inbound-hover);
+        }
+
 
 /* Button submit */
 button {
@@ -241,72 +242,72 @@ footer {
     margin-top: 30px;
 }
 
-.footer-frame {
-    margin: var(--margin-container-lg);     /* Box */
-    padding: var(--padding-container);
-    display: flex;                          /* Flex */
-    justify-content: space-between;
-    align-items: center;
-}
+    .footer-frame {
+        margin: var(--margin-container-lg);     /* Box */
+        padding: var(--padding-container);
+        display: flex;                          /* Flex */
+        justify-content: space-between;
+        align-items: center;
+    }
 
-/* Legal */
-.legal-container {
-    width: 500px;           /* Box */
-    padding: 0px;
-    display: flex;          /* Flex */
-    justify-content: end;
-    align-items: center;
-}
+        /* Legal */
+        .legal-container {
+            width: 500px;           /* Box */
+            padding: 0px;
+            display: flex;          /* Flex */
+            justify-content: end;
+            align-items: center;
+        }
 
-.footer-text {
-    color: var(--footer-white);
-    font-size: 14px;
-}
+            .footer-text {
+                color: var(--footer-white);
+                font-size: 14px;
+            }
 
-/* InboundCycle © 2015 */
-#lg-first-element {
-    order: 1;
-}
+            /* InboundCycle © 2015 */
+            #lg-first-element {
+                order: 1;
+            }
 
-/* Nav */
-#lg-second-element {
-    order: 2;
-}
+            /* Nav */
+            #lg-second-element {
+                order: 2;
+            }
 
-/* Elemento que queda en medio de los tres textos del footer */
-#mid-element {
-    border-left: 2px solid var(--inbound-grey);
-    border-right: 2px solid var(--inbound-grey);
-    text-align: center;
-    width: 155px;
-}
+                .legal-links {
+                    width: 245px;           /* Box */
+                    padding: 0px;
+                    display: flex;          /* Flex */
+                    justify-content: end;
+                    align-items: center;    
+                }
 
-/* Aviso Legal */
-#second-nav-element {
-    width: 80px;
-}
+                    .legal-links li {
+                        list-style-type: none;
+                        text-align: end;
+                    }
 
-.legal-links {
-    width: 245px;           /* Box */
-    padding: 0px;
-    display: flex;          /* Flex */
-    justify-content: end;
-    align-items: center;    
-}
+                    /* Elemento que queda en medio de los tres textos del footer */
+                    #mid-element {
+                        border-left: 2px solid var(--inbound-grey);
+                        border-right: 2px solid var(--inbound-grey);
+                        text-align: center;
+                        width: 155px;
+                    }
 
-.legal-links li {
-    list-style-type: none;
-    text-align: end;
-}
+                    /* Aviso Legal */
+                    #second-nav-element {
+                        width: 80px;
+                    }
 
-.legal-links li a {
-    text-decoration: none;
-    width: 100%;
-}
+                        .legal-links li a {
+                            text-decoration: none;
+                            width: 100%;
+                        }
 
-.legal-links li a:hover {
-    color: var(--inbound-hover);
-}
+                        .legal-links li a:hover {
+                            color: var(--inbound-hover);
+                        }
 
 
 /******* POP-UP *******/
@@ -324,36 +325,36 @@ footer {
     display: none;      /* Display */
 }
 
-/* Pop-up */
-.caption {
-    margin: 0;              /* Box */
-    width: 20%;
-    padding: 10px 15px;
-    border-radius: 8px;
-    position: absolute;     /* Position */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: var(--inbound-orange);    
-}
+    /* Pop-up */
+    .caption {
+        margin: 0;              /* Box */
+        width: 20%;
+        padding: 10px 15px;
+        border-radius: 8px;
+        position: absolute;     /* Position */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: var(--inbound-orange);    
+    }
 
-.caption i {
-    float: right;
-    cursor: pointer;
-}
+        .caption i {
+            float: right;
+            cursor: pointer;
+        }
 
-.caption i:hover {
-    color: var(--inbound-grey);
-}
+        .caption i:hover {
+            color: var(--inbound-grey);
+        }
 
-.caption p {
-    margin: 25px 0px;           /* Box */
-    text-align: center;         /* Text & Font */
-    text-transform: uppercase;
-    font-size: 15px;
-    letter-spacing: 2px;
-    color: var(--footer-white);
-}
+        .caption p {
+            margin: 25px 0px;           /* Box */
+            text-align: center;         /* Text & Font */
+            text-transform: uppercase;
+            font-size: 15px;
+            letter-spacing: 2px;
+            color: var(--footer-white);
+        }
 
 
 
@@ -462,9 +463,9 @@ footer {
         border-top: 5px solid black;
     }
 
-    .header-container {
-        margin: var(--margin-container-md);
-    }
+        .header-container {
+            margin: var(--margin-container-md);
+        }
 
 
     /******* MAIN SECTION LAYOUT *******/
@@ -474,14 +475,14 @@ footer {
         flex-direction: column;
     }
 
-    section {
-        flex: 0 1 auto;
-        position: relative;
-    }
+        section {
+            flex: 0 1 auto;
+            position: relative;
+        }
 
-    aside {
-        flex: 0 1 auto;
-    }
+        aside {
+            flex: 0 1 auto;
+        }
 
 
     /******* SECTION *******/
@@ -496,9 +497,9 @@ footer {
         margin: 50px 0px;        
     }
 
-    .emphasizes i {
-        transform: rotate(90deg);
-    }
+        .emphasizes i {
+            transform: rotate(90deg);
+        }
 
 
     /******* FORM *******/
@@ -530,9 +531,9 @@ footer {
         border-top: 5px solid var(--inbound-orange);
     }
 
-    .header-container {
-        margin: var(--margin-container-sm);
-    }
+        .header-container {
+            margin: var(--margin-container-sm);
+        }
 
     /* Logotipo */
     .logotype {
@@ -565,11 +566,11 @@ footer {
         align-items: center;
     }
 
-    .legal-container {
-        margin-top: 20px;
-        justify-content: center; 
-        width: 100%;   
-    }
+        .legal-container {
+            margin-top: 20px;
+            justify-content: center; 
+            width: 100%;   
+        }
 
 
     /******* Pop-up *******/
@@ -588,28 +589,28 @@ footer {
         border-top: 5px solid black;
     }
 
-    .header-container {
-        margin: var(--margin-container-xs);
-        padding: var(--padding-container-xs);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
+        .header-container {
+            margin: var(--margin-container-xs);
+            padding: var(--padding-container-xs);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-    /* Logotipo */
-    .logotype {
-        width: 50%;
-        min-width: 200px;
-        height: auto;
-        margin-bottom: 20px;
-    }
+            /* Logotipo */
+            .logotype {
+                width: 50%;
+                min-width: 200px;
+                height: auto;
+                margin-bottom: 20px;
+            }
 
-    /* Social Icons */
-    .social-icons {
-        align-self:center;
-        width: 200px;
-    }
+            /* Social Icons */
+            .social-icons {
+                align-self:center;
+                width: 200px;
+            }
 
 
     /******* MAIN SECTION LAYOUT *******/
@@ -637,24 +638,24 @@ footer {
         margin: var(--margin-container-xs);
     }
 
-    .legal-container {    
-        flex-direction: column;
-    }
+        .legal-container {    
+            flex-direction: column;
+        }
 
-    /* InboundCycle © 2015 */
-    #lg-first-element {
-        order: 2;
-    }
+            /* InboundCycle © 2015 */
+            #lg-first-element {
+                order: 2;
+            }
 
-    /* Nav */
-    #lg-second-element {
-        order: 1;
-        margin-bottom: 20px;
-    }
+            /* Nav */
+            #lg-second-element {
+                order: 1;
+                margin-bottom: 20px;
+            }
 
-    #mid-element {
-        border-left: 0px;
-    }
+                #mid-element {
+                    border-left: 0px;
+                }
 
     /******* Pop-up *******/
     /* Pop-up */
