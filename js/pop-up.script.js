@@ -11,6 +11,8 @@ $(document).ready(function () {
         
     });
 
+    
+
     //Evento click en botón X de pop-up
     $('.caption i').click(function() {
 
@@ -18,6 +20,8 @@ $(document).ready(function () {
         $('.popup').hide();
 
     });
+
+
 
     //Si se apreta fuera de .caption, se cierra pop-up
     $('.popup').click(function(event) {

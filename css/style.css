@@ -472,8 +472,6 @@ footer {
         flex-direction: column;
     }
 
-
-    /******* MAIN SECTION LAYOUT *******/
     section {
         flex: 0 1 auto;
         position: relative;
@@ -497,7 +495,7 @@ footer {
     }
 
     .emphasizes i {
-        display: none;
+        transform: rotate(90deg);
     }
 
 
