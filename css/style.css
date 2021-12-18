@@ -1,12 +1,12 @@
 /* Variables */
 :root {
-  --margin-container-lg: 0px 150px;
+  --margin-container-lg: 0px 150px;         /* Box */     
   --margin-container-md: 0px 75px;
   --margin-container-sm: 0px 30px;
   --margin-container-xs: 0px 0px;
   --padding-container: 40px;
   --padding-container-xs: 25px;
-  --inbound-orange: rgb(233, 108, 25);
+  --inbound-orange: rgb(233, 108, 25);    /* Colors */                     
   --inbound-hover: rgb(248, 164, 108);
   --inbound-grey: rgb(167, 167, 167);
   --footer-black: rgb(73, 73, 73);
@@ -15,8 +15,6 @@
 }
 
 *{
-    /* margin: 10px; */
-    /* padding: 10px; */
     box-sizing: border-box;    
 }
 
@@ -29,30 +27,26 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+
 /******* HEADER *******/
 header {
     border-top: 5px solid var(--inbound-orange);
 }
 
 .header-container {
-    margin: var(--margin-container-lg);
+    margin: var(--margin-container-lg);         /* Box */
     padding: var(--padding-container);
-    display: flex;
+    display: flex;                              /* Flex */
     justify-content: space-between;
     align-items: center;
 }
 
-/* Logotipo */
-/* .logotype {
-    border-style: solid;
-} */
-
 /* Social icons */
 .social-icons {
-    padding: 0px;
+    padding: 0px;                           /* Box */
     width: 60px;
-    align-self: flex-start;
     margin: 0px;
+    align-self: flex-start;                 /* Flex */    
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -75,14 +69,12 @@ header {
 .separator-image-container {
     width: 100%;
     height: auto;
-    /* margin-bottom: 40px; */
 }
 
 .separator-image {
     width: 100%;
     max-height: 130px;
     object-fit: cover;
-    /* overflow: hidden; */
 }
 
 
@@ -93,14 +85,12 @@ header {
     display: flex;
 }
 
-section {    
-    /* background: #4E4E6A; */
+section {
     flex: 1 1 auto;
     position: relative;
 }
 
 aside {
-    /* background: #F73f52; */
     flex: 1 1 auto;
 }
 
@@ -108,12 +98,12 @@ aside {
 /******* SECTION *******/
 /* Imagen */
 .ebook {
-    position: absolute;
+    max-width: 50%;         /* Box */
+    height: auto;
+    position: absolute;     /* Position */
     z-index: 100;
     bottom: 45%;
-    left: 55%;
-    max-width: 50%;
-    height: auto;
+    left: 55%;    
 }
 
 /* Título */
@@ -155,9 +145,9 @@ hr {
 }
 
 .emphasizes {
-    width: 100%;
+    width: 100%;                    /* Box */
     margin-top: 70px;
-    text-align: center;
+    text-align: center;             /* Text & Font */
     color: var(--inbound-orange);
     font-weight: bold;
     text-transform: uppercase;
@@ -227,17 +217,17 @@ input[type=email] {
 
 /* Button submit */
 button {
-    width: 100%;
-    background-color: var(--inbound-orange);
-    color: var(--footer-white);
+    width: 100%;                        /* Box */
     padding: 14px 20px;
     margin: 25px 0px 8px 0px;
     border: none;
-    cursor: pointer;
+    background-color: var(--inbound-orange);
+    color: var(--footer-white);         /* Text & Font */    
     text-transform: uppercase;
     font-weight: bold;
     font-size: 15px;
     letter-spacing: 2px;
+    cursor: pointer;
 }
 
 button:hover {
@@ -252,18 +242,18 @@ footer {
 }
 
 .footer-frame {
-    margin: var(--margin-container-lg);
+    margin: var(--margin-container-lg);     /* Box */
     padding: var(--padding-container);
-    display: flex;
+    display: flex;                          /* Flex */
     justify-content: space-between;
     align-items: center;
 }
 
 /* Legal */
 .legal-container {
-    width: 500px;
+    width: 500px;           /* Box */
     padding: 0px;
-    display: flex;
+    display: flex;          /* Flex */
     justify-content: end;
     align-items: center;
 }
@@ -288,7 +278,6 @@ footer {
     border-left: 2px solid var(--inbound-grey);
     border-right: 2px solid var(--inbound-grey);
     text-align: center;
-    /* margin-left: 5px; */
     width: 155px;
 }
 
@@ -298,11 +287,11 @@ footer {
 }
 
 .legal-links {
-    width: 245px;
-    display: flex;
-    justify-content: end;
-    align-items: center;
+    width: 245px;           /* Box */
     padding: 0px;
+    display: flex;          /* Flex */
+    justify-content: end;
+    align-items: center;    
 }
 
 .legal-links li {
@@ -322,30 +311,30 @@ footer {
 
 /******* POP-UP *******/
 /* Container */
-.popup {
-    z-index: 200;
-    width: 100%;
+.popup {    
+    width: 100%;        /* Box */
     height: 100vh;
-    position: fixed;
+    position: fixed;    /* Position */
+    z-index: 200;
     top: 0;
     right:0px;
     bottom:0px;
     left:0px;
     background-color: rgba(0, 0, 0, 0.486);
-    display: none;
+    display: none;      /* Display */
 }
 
 /* Pop-up */
 .caption {
-    margin: 0;
+    margin: 0;              /* Box */
     width: 20%;
-    position: absolute;
+    padding: 10px 15px;
+    border-radius: 8px;
+    position: absolute;     /* Position */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: var(--inbound-orange);
-    padding: 10px 15px;
-    border-radius: 8px;
+    background-color: var(--inbound-orange);    
 }
 
 .caption i {
@@ -358,8 +347,8 @@ footer {
 }
 
 .caption p {
-    margin: 25px 0px;
-    text-align: center;
+    margin: 25px 0px;           /* Box */
+    text-align: center;         /* Text & Font */
     text-transform: uppercase;
     font-size: 15px;
     letter-spacing: 2px;
@@ -369,16 +358,23 @@ footer {
 
 
 
-/******* RESPONSIVE MEDIA QUERIES  *******/
-/* XL Length */
+/************************************* 
+
+        RESPONSIVE MEDIA QUERIES  
+
+*************************************/
+
+/******************************* XL Length *******************************/
 @media all and (min-width: 1800px) {
+    /******* SECTION *******/
     /* Imagen */
     .ebook {
         bottom: 37%;
     }
 }
 
-/* Media queries relacionados con la imagen del ebook */
+
+/* Media query que adapta según movimiento ebook */
 @media all and (max-width: 1325px) {
     /******* SECTION *******/
     /* Imagen */
@@ -406,6 +402,8 @@ footer {
     }
 }
 
+
+/* Media query que adapta según movimiento ebook */
 @media all and (max-width: 1250px) {
     /******* ASIDE *******/
     form {
@@ -415,6 +413,8 @@ footer {
     }
 }
 
+
+/* Media query que adapta según movimiento ebook */
 @media all and (max-width: 1195px) {
     /* Imagen */
     .ebook {
@@ -442,6 +442,8 @@ footer {
     }
 }
 
+
+/* Media query que adapta según movimiento ebook */
 @media all and (max-width: 1100px) {
     /******* ASIDE *******/
     form {
@@ -453,7 +455,7 @@ footer {
 
 
 
-/* Mid-length */
+/******************************* Mid-length ******************************/
 @media all and (max-width: 992px) {
     /* Header */
     header {
@@ -501,65 +503,9 @@ footer {
 
     /******* FORM *******/
     form {
-        width: 100%;
-        background-color: var(--footer-white);
-        padding: 5px 30px 25px 30px;
+        width: 100%;        
         margin-left: 0px;
     }
-
-    /* Form title */
-    h3 {
-        text-align: center;
-        text-transform: uppercase;
-        color: var(--inbound-orange);
-    }
-
-
-    /* Input containers */
-    fieldset {
-        padding: 0px;
-        margin: 0px;
-        border: 0px;
-    }
-
-
-    /* First section of inputs */
-    input[type=text], [type=email] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    }
-
-    input[type=email] {
-        margin-bottom: 25px;
-    }
-
-    /* Second section of inputs */
-    .label-checkbox {
-        display: block;
-        color: var(--footer-black);
-    }
-
-    /* Link del primer checkbox */
-    #link-priv {
-        text-decoration: none;
-        color: var(--inbound-orange);
-    }
-
-    #link-priv:hover {
-        color: var(--inbound-hover);
-    }
-
-    .label-checkbox:first-child {
-        margin-bottom: 7px;
-    }
-
-    .label-checkbox:last-child {
-        margin-bottom: 7px;
-    }
-
 
 
     /******* FOOTER *******/
@@ -577,7 +523,7 @@ footer {
 
 
 
-/* Small-length */
+/****************************** Small-length ******************************/
 @media all and (max-width: 768px) {
     /* Header */
     header {
@@ -635,7 +581,7 @@ footer {
 
 
 
-/* XS-length */
+/***************************** XS-length ****************************/
 @media all and (max-width: 576px) {
     /* Header */
     header {
@@ -718,6 +664,7 @@ footer {
 }
 
 
+/* Media query que adapta según movimiento ebook */
 @media all and (max-width: 450px) {
     /* Imagen */
     .ebook {
