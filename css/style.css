@@ -459,13 +459,9 @@ footer {
 /******************************* Mid-length ******************************/
 @media all and (max-width: 992px) {
     /* Header */
-    header {
-        border-top: 5px solid black;
+    .header-container {
+        margin: var(--margin-container-md);
     }
-
-        .header-container {
-            margin: var(--margin-container-md);
-        }
 
 
     /******* MAIN SECTION LAYOUT *******/
@@ -527,13 +523,9 @@ footer {
 /****************************** Small-length ******************************/
 @media all and (max-width: 768px) {
     /* Header */
-    header {
-        border-top: 5px solid var(--inbound-orange);
+    .header-container {
+        margin: var(--margin-container-sm);
     }
-
-        .header-container {
-            margin: var(--margin-container-sm);
-        }
 
     /* Logotipo */
     .logotype {
@@ -585,32 +577,28 @@ footer {
 /***************************** XS-length ****************************/
 @media all and (max-width: 576px) {
     /* Header */
-    header {
-        border-top: 5px solid black;
+    .header-container {
+        margin: var(--margin-container-xs);
+        padding: var(--padding-container-xs);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
 
-        .header-container {
-            margin: var(--margin-container-xs);
-            padding: var(--padding-container-xs);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
+        /* Logotipo */
+        .logotype {
+            width: 50%;
+            min-width: 200px;
+            height: auto;
+            margin-bottom: 20px;
         }
 
-            /* Logotipo */
-            .logotype {
-                width: 50%;
-                min-width: 200px;
-                height: auto;
-                margin-bottom: 20px;
-            }
-
-            /* Social Icons */
-            .social-icons {
-                align-self:center;
-                width: 200px;
-            }
+        /* Social Icons */
+        .social-icons {
+            align-self:center;
+            width: 200px;
+        }
 
 
     /******* MAIN SECTION LAYOUT *******/
